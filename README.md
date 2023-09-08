@@ -11,7 +11,7 @@
 
 我们希望营造一个开放和包容的学习环境，为此，我们打算支持多元化的观点和经验，并尊重所有人。同时，作为本考核的参与者，请认识到你可以积极主动地让其他同学感到被包容和受到尊重。
 
-## 诚信政策<span id="Academic Integrity"></span>
+## 诚信政策<span id="Integrity"></span>
 
 我们对学术诚信有最严格的要求，如果你违反了我们的学术诚信政策，将被取消本次考核成绩，并被记录在ANA诚信档案库中，永久不得加入ANA。
 
@@ -52,7 +52,7 @@ $ ssh netid@58.206.101.40 -p 59999
 
 现在让我们来学习一下Git的使用。
 
-为了顺利获取我们为你编写好的代码框架并提交作业，我们需要和Github进行友好交流，首先，前往https://github.com/注册一个账户。如果你打不开这个网页，多尝试几次，总有一次能成功。
+为了顺利获取我们为你编写好的代码框架并提交作业，我们需要和Github进行友好交流，首先，前往[Github](https://github.com)注册一个账户。如果你打不开这个网页，多尝试几次，总有一次能成功。
 
 要让Github认识你，知道是你在访问你的个人仓库而不是什么Alice和Bob，你需要建立一对**RSA**密钥，并且把公钥上传到Github。不要担心，我们一步一步来。
 
@@ -108,6 +108,6 @@ vscode的拓展插件非常丰富，我们可以使用**Remote - SSH**来连接�
 
 ## How to ask a question
 
-请使用Github的Issues功能，你可以在我们公开的两个仓库[docs](https://github.com/ANA-Training/docs)和[student0](https://github.com/ANA-Training/student0)上提交Issues，我们的社员会不定时去解决你的问题。但请注意，提问请遵守[诚信政策](#Academic Integrity)。你也可以在你自己的student仓库内提出私人Issues（其他人不可见），我们同样会解答你的问题。
+请使用Github的Issues功能，你可以在我们公开的两个仓库[docs](https://github.com/ANA-Training/docs)和[student0](https://github.com/ANA-Training/student0)上提交Issues，我们的社员会不定时去解决你的问题。但请注意，提问请遵守[诚信政策](#Integrity)。你也可以在你自己的student仓库内提出私人Issues（其他人不可见），我们同样会解答你的问题。
 
 请不要在qq群提出技术方面的问题，qq群仅用于交流考核政策(policy)方面的问题，或者闲聊。为什么？因为我们不希望一个问题被其他人的消息掩盖掉，而且我们希望看到一个问题将问题本身描述得非常详细，如果你仅仅是询问：怎么安装vscode？诸如此类的问题，我们**有权**拒绝回答。相对地，“我的代码编译不通过，编译器提示了这个错误（后面附一张图片）”这种问题，我们很乐意为你解答。
