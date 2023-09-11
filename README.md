@@ -44,7 +44,15 @@
 
 ### ssh
 
-我们已经为所有参与考核的人建立了账户并通过apply系统发放账号密码，使用`ssh`连接到你的账户：
+我们已经为所有参与考核的人建立了账户，你可以使用`ssh`连接到你的账户：
+
+> ssh是什么？
+>
+> ssh是一个终端命令，需要在终端环境下运行。Windows用户可以按下win+r并输入cmd，按下回车即可打开终端。
+>
+> ssh被广泛用于连接远端设备。教学机器和你的pc是两台独立的设备，要从一台设备上访问另一台设备上的文件，就可以使用ssh在两台设备间建立可信连接，并进行数据传输。通常ssh只能打开另一个设备上的终端，但是如果你精通终端命令，打开终端和使用GUI访问从根本上来说没有区别。
+>
+> 有关ssh的更多知识请在Linux环境的终端中输入man ssh或者使用Google search: man ssh
 
 ```bash
 $ ssh xxx2123456789@58.206.101.40 -p 59999
@@ -54,9 +62,9 @@ $ ssh xxx2123456789@58.206.101.40 -p 59999
 
 根据提示输入密码，再按回车，你会看到一个终端，使用这个终端，你可以执行许多Linux命令行操作。
 
-### Git
+### Github
 
-现在让我们来学习一下Git的使用。
+现在让我们来学习一下Github的使用。
 
 为了顺利获取我们为你编写好的代码框架并提交作业，我们需要和Github进行友好交流，首先，前往[Github](https://github.com)注册一个账户。如果你打不开这个网页，多尝试几次，总有一次能成功。
 
@@ -98,7 +106,13 @@ ssh -T git@github.com
 Hi USERNAME! You've successfully authenticated, but GitHub does not provide shell access.
 ```
 
-至于Git有哪些操作，如何正确使用Git，网上有非常多的教程，这里推荐一篇和我们的文档写得一样详细的Git教程：[Git教程 - 廖雪峰的官方网站](https://www.liaoxuefeng.com/wiki/896043488029600)。
+**Git和Github**
+
+Git是一个版本控制工具，Github是Git的远程仓库之一，其它类似的远程仓库还有Gitlab，Gitea，Gitee等。
+
+使用Git创建的仓库可以被推送到远程仓库上，这样无论你在世界上的任何地方，使用任何设备，只要你能证明你是你*（如何证明？RSA密钥对。）*，你就能够访问到你的存储仓库，就像使用网盘一样。
+
+至于Git有哪些操作，如何正确使用Git，网上有非常多的教程，这里推荐一篇面向小白，通俗易懂的Git教程：[Git教程 - 廖雪峰的官方网站](https://www.liaoxuefeng.com/wiki/896043488029600)。
 
 ### vscode
 
@@ -116,8 +130,16 @@ vscode的拓展插件非常丰富，我们可以使用**Remote - SSH**来连接�
 
 我们使用Gradescope对所有考核者的成果进行评分，所有的评分由autograder自动完成，也就是说，评分不具有主观因素，是完全客观的。如果autograder出现了问题，例如误判，请及时在**Issues**板块（如下所述）提出问题。
 
+#### 注册Gradescope
+
+![GradescopeRegister](./GradescopeRegister.png)
+
+由于Task 1-4均需要在Gradescope上提交，请前往[Gradescope](https://www.gradescope.com)注册一个帐户。**打开Gradescope主页 => 点击绿色的Sign Up按钮 => 选择Student => 输入个人信息（Course Entry Code已经通过考核群发送）**。注意：Student ID必填，我们通过Student ID来唯一地标识出每个同学。
+
 ## How to ask a question
 
 请使用Github的**Issues**功能，你可以在我们公开的两个仓库[docs](https://github.com/ANA-Training/docs)和[student0](https://github.com/ANA-Training/student0)上提交Issues，我们的社员会不定时去解决你的问题。但请注意，提问请遵守[诚信政策](#Integrity)。你也可以在你自己的student仓库内提出私人Issues（其他人不可见），我们同样会解答你的问题。
 
 请不要在qq群提出技术方面的问题，qq群仅用于交流考核政策(policy)方面的问题，或者闲聊。为什么？因为我们不希望一个问题被其他人的消息掩盖掉，而且我们希望看到一个问题将问题本身描述得非常详细，如果你仅仅是询问：怎么安装vscode？诸如此类的问题，我们**有权**拒绝回答。相对地，“我的代码编译不通过，编译器提示了这个错误（后面附一张图片）”这种问题，我们很乐意为你解答。
+
+**Issues**还有另一个好处，它向我们展示了其他人遇到的问题。如果我们遇到了同样的问题，可以先查看其他人是如何解决的，并尝试解决。这样可以避免重复解答同一类问题，因为我们的实践经验告诉我们，很多人会遇到相同的问题。
